@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/AgtLucas/pokemonjs/issues"
   },
-  "homepage": "https://github.com/AgtLucas/pokemonjs#readme"
+  "homepage": "https://github.com/AgtLucas/pokemonjs#readme",
+  "dependencies": {
+    "koa": "^1.1.1",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-router": "^0.13.5"
+  }
 }
