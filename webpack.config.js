@@ -18,7 +18,10 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new ExtractTextPlugin('styles.scss', {
+      allChunks: true
+    })
   ],
 
   module: {
@@ -37,6 +40,6 @@ module.exports = {
 
   resolve: {
     modulesDirectories: ['node_modules'],
-    extensions: ['', '.js', 'jsx']
+    extensions: ['', '.js', '.jsx', '.scss']
   }
 };
