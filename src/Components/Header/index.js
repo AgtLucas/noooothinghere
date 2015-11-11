@@ -1,14 +1,17 @@
 import React from 'react';
-import styles from './styles.scss';
+import CSSModules from 'react-css-modules';
+import styles from './styles.css';
 
-export default class Header extends React.Component {
+class Header extends React.Component {
 
   render() {
     return(
-      <header className={styles.main__header}>
-        <h1 className={styles.main__logo}></h1>
+      <header styleName='main__header'>
+        <h1 styleName='main__logo'>Pokemon</h1>
       </header>
     );
   }
 
 };
+
+export default CSSModules(Header, styles);
