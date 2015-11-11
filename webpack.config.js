@@ -8,7 +8,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './src/app'
+    './src/app.jsx'
   ],
 
   output: {
@@ -26,16 +26,17 @@ module.exports = {
       {
         test: /\.js$/,
         loaders: ['react-hot', 'babel'],
-        include: path.join(__dirname, 'src'),
-        exclude: /node_modules/,
-        query: {
-          presets: ['es2015']
-        }
+        include: path.join(__dirname, 'src')
       },
       {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass')
       }
     ]
+  },
+
+  resolve: {
+    modulesDirectories: ['node_modules'],
+    extensions: ['', '.js', 'jsx']
   }
 };
