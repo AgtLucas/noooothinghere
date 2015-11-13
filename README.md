@@ -1,2 +1,0 @@
-# pokemonjs
-HE:labs test
