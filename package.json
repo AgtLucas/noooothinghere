@@ -1,0 +1,19 @@
+{
+  "name": "noooothinghere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgtLucas/noooothinghere.git"
+  },
+  "author": "Lucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AgtLucas/noooothinghere/issues"
+  },
+  "homepage": "https://github.com/AgtLucas/noooothinghere#readme"
+}
