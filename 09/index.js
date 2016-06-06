@@ -1,5 +1,5 @@
 const addCounter = (list) => {
-  return list.concat([0])
+  return [...list, 0]
 }
 
 const testCounter = () => {
