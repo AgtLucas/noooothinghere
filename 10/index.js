@@ -1,6 +1,13 @@
 const toggleTodo = (todo) => {
-  todo.completed = !todo.completed
-  return todo
+  return Object.assign({}, todo, {
+    completed: !todo.completed
+  })
+  // Or, ES7 object...spread
+  // https://babeljs.io/docs/plugins/preset-stage-2/
+  // return {
+  //   ...todo,
+  //   completed: !todo.completed
+  // }
 }
 
 const testToggleTodo = () => {
@@ -14,6 +21,8 @@ const testToggleTodo = () => {
     text: 'Learn Redux',
     completed: true
   }
+
+  deepFreeze(todoBefore)
 
   expect(
     toggleTodo(todoBefore)
