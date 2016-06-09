@@ -1,1 +1,1 @@
-# Redux: Writing a Todo List Reducer (Adding a Todo)
+# Redux: Writing a Todo List Reducer (Toggling a Todo)
