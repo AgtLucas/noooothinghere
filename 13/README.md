@@ -1,1 +1,1 @@
-# Redux: Writing a Todo List Reducer (Toggling a Todo)
+# Redux: Reducer Composition with Arrays
