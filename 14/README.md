@@ -1,1 +1,1 @@
-# Redux: Reducer Composition with Arrays
+# Redux: Reducer Composition with Objects
