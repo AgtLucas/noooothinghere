@@ -1,1 +1,1 @@
-# Redux: React Todo List Example (Adding a Todo)
+# Redux: React Todo List Example (Toggling a Todo)
